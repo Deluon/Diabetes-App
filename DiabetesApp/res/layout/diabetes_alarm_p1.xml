@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:padding="10dp">
+
+    <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_alignParentTop="true" android:layout_alignEnd="@+id/switchActive">
+    </ScrollView>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarm 1"
+            android:id="@+id/textView5" android:textSize="20dp"
+            android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+            android:layout_marginTop="24dp"/>
+    <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="       Active"
+            android:id="@+id/switchActive"
+            android:checked="false" android:layout_alignTop="@+id/textView5" android:layout_alignParentEnd="true"
+            android:onClick="activeOnClick"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAlarmNotes" android:layout_below="@+id/switchActive" android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/switchActive" android:hint="Type notes here" android:maxLength="75"/>
+    <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recurring"
+            android:id="@+id/switchRecurring"
+            android:checked="false"
+            android:layout_alignBottom="@+id/txtAlarmNotes" android:layout_alignParentEnd="true"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/txtAlarmDate"
+            android:layout_alignBottom="@+id/textView5" android:layout_centerHorizontal="true"
+            android:onClick="dateOnClick"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarm 2"
+            android:id="@+id/textView6"
+            android:layout_marginTop="24dp" android:textSize="20dp"
+            android:layout_below="@+id/txtAlarmNotes" android:layout_alignParentStart="true"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="date"
+              android:ems="10" android:id="@+id/editText2"
+              android:onClick="dateOnClick" android:layout_alignBottom="@+id/textView6"
+              android:layout_centerHorizontal="true"/>
+    <Switch android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="       Active"
+            android:id="@+id/switch1" android:checked="false"
+            android:onClick="activeOnClick" android:layout_alignBottom="@+id/editText2"
+            android:layout_alignEnd="@+id/scrollView"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/editText3"
+              android:hint="Type notes here" android:layout_below="@+id/textView6"
+              android:layout_alignParentStart="true" android:layout_toStartOf="@+id/switch2" android:maxLength="75"/>
+    <Switch android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Recurring"
+            android:id="@+id/switch2" android:checked="false"
+            android:layout_alignBottom="@+id/editText3" android:layout_alignParentEnd="true"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alarm 3"
+              android:id="@+id/textView7" android:textSize="20dp"
+              android:layout_below="@+id/editText3" android:layout_alignParentStart="true"
+              android:layout_marginTop="22dp"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="date"
+              android:ems="10" android:id="@+id/editText4" android:onClick="dateOnClick"
+              android:layout_alignBottom="@+id/textView7" android:layout_alignStart="@+id/editText2"/>
+    <Switch android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="       Active"
+            android:id="@+id/switch3" android:checked="false" android:onClick="activeOnClick"
+            android:layout_alignBottom="@+id/editText4" android:layout_alignEnd="@+id/switch2"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/editText5"
+              android:hint="Type notes here"
+              android:layout_below="@+id/switch3" android:layout_alignParentStart="true"
+              android:layout_toStartOf="@+id/switch3" android:maxLength="75"/>
+    <Switch android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Recurring"
+            android:id="@+id/switch4" android:checked="false"
+            android:layout_alignBottom="@+id/editText5" android:layout_alignParentEnd="true"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alarm 4"
+              android:id="@+id/textView8" android:textSize="20dp"
+              android:layout_marginTop="22dp"
+              android:layout_below="@+id/editText5" android:layout_alignParentStart="true"/>
+    <Switch android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="       Active"
+            android:id="@+id/switch5" android:checked="false" android:onClick="activeOnClick"
+            android:layout_alignTop="@+id/textView8" android:layout_alignEnd="@+id/switch4"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/editText6"
+              android:hint="Type notes here"
+              android:layout_below="@+id/switch5" android:layout_alignParentStart="true"
+              android:layout_toStartOf="@+id/switch6" android:maxLength="75"/>
+    <Switch android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Recurring"
+            android:id="@+id/switch6" android:checked="false"
+            android:layout_alignBottom="@+id/editText6" android:layout_alignEnd="@+id/switch5"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alarm 5"
+              android:id="@+id/textView9" android:textSize="20dp" android:layout_marginTop="25dp"
+              android:layout_below="@+id/editText6" android:layout_alignParentStart="true"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="date"
+              android:ems="10" android:id="@+id/editText7" android:onClick="dateOnClick"
+              android:layout_alignBottom="@+id/switch5" android:layout_alignStart="@+id/editText8"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="date"
+              android:ems="10" android:id="@+id/editText8" android:onClick="dateOnClick"
+              android:layout_alignBottom="@+id/textView9" android:layout_centerHorizontal="true"/>
+    <Switch android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="       Active"
+            android:id="@+id/switch7" android:checked="false" android:onClick="activeOnClick"
+            android:layout_alignBottom="@+id/editText8" android:layout_alignParentEnd="true"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/editText9"
+              android:hint="Type notes here"
+              android:layout_below="@+id/switch7" android:layout_alignParentStart="true"
+              android:layout_toStartOf="@+id/switch7" android:maxLength="75"/>
+    <Switch android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Recurring"
+            android:id="@+id/switch8" android:checked="false"
+            android:layout_alignBottom="@+id/editText9" android:layout_alignParentEnd="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next Page"
+            android:id="@+id/btnAlarmNext"
+            android:onClick="alarmNext" android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/editText8"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Alarms"
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true" android:layout_toEndOf="@+id/textView9"
+            android:onClick="saveAlarm"/>
+</RelativeLayout>

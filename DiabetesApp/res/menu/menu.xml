@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+         android:id="@+id/switchToMain"
+         android:orderInCategory="100"
+         android:showAsAction="always"
+         android:icon = "@drawable/ic_main"
+         android:title="Diabetes Calculator"
+    />
+    <item
+            android:id="@+id/switchToLog"
+            android:orderInCategory="200"
+            android:showAsAction="always"
+            android:icon = "@drawable/ic_log"
+            android:title="Diabetes Log"
+    />
+    <item
+            android:id="@+id/switchToChart"
+            android:orderInCategory="300"
+            android:showAsAction="always"
+            android:icon = "@drawable/ic_chart"
+            android:title="Diabetes Chart"
+    />
+    <item
+            android:id="@+id/switchToAlarm"
+            android:orderInCategory="300"
+            android:showAsAction="always"
+            android:icon = "@drawable/ic_alarm"
+            android:title="Diabetes Alarm"
+    />
+    <item
+            android:id="@+id/switchToPrefs"
+            android:orderInCategory="300"
+            android:showAsAction="always"
+            android:icon = "@drawable/ic_about"
+            android:title="Preferences"
+    />
+</menu>

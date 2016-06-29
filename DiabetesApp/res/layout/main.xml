@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="1" android:padding="10dp">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is your EAG?"
+            android:id="@+id/textView2" android:layout_alignParentStart="true" android:layout_alignParentTop="true"
+            android:textIsSelectable="false" android:textSize="20dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEag" android:layout_below="@+id/textView2" android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/textView2"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is your A1C?"
+            android:id="@+id/textView17" android:layout_below="@+id/txtEag" android:layout_alignParentStart="true"
+            android:textSize="20dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtA1C" android:layout_below="@+id/textView17" android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/textView17"/>
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@+id/txtA1C"
+            android:id="@+id/radGroupCalcM1">
+        <TextView
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:text="A1C Calculation Method:"
+                android:id="@+id/textView18" android:textSize="20dp"
+                android:layout_below="@+id/txtA1C" android:layout_alignParentStart="true"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADAG"
+                android:id="@+id/radADAG" android:checked="false" android:textSize="20dp"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DCCT"
+                android:id="@+id/radDCCT" android:checked="false" android:textSize="20dp"/>
+    </RadioGroup>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:id="@+id/btnCalculate" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+            android:onClick="Calculate" android:nestedScrollingEnabled="false"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblResults"
+            android:textAlignment="center" android:textSize="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/btnCalculate" android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferences"
+            android:id="@+id/btnPrefs"
+            android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"
+            android:onClick="switchToPrefs"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:id="@+id/btnAbout"
+            android:layout_alignTop="@+id/btnPrefs" android:layout_alignParentStart="true"
+            android:onClick="switchToAbout"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Log"
+            android:id="@+id/btnLog"
+            android:layout_below="@+id/lblResults" android:layout_centerHorizontal="true"
+            android:onClick="switchToLogger"/>
+</RelativeLayout>
+

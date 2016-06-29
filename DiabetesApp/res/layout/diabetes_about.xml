@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About the Company"
+            android:id="@+id/btnAbout"
+            android:layout_marginBottom="71dp" android:onClick="onClickAbout" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:id="@+id/btnContact"
+            android:onClick="onClickContact"
+            android:layout_above="@+id/btnAbout" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This app was developed by Joel Simmons. He was born and raised in Spokane, WA and has 3 years of experience as a developer. We here at Medi-Hope strive for quality in our products and services, and hope you have a wonderful experience with us."
+            android:id="@+id/textView15"
+            android:textSize="25dp"
+            android:padding="15dp" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+</RelativeLayout>

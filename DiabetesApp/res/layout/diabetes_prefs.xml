@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:padding="10dp">
+
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true" android:id="@+id/radGroup2">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Default A1C Algorithm:"
+                android:id="@+id/textView16" android:textSize="20dp"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADAG"
+                android:id="@+id/radADAG" android:checked="false" android:textSize="20dp"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DCCT"
+                android:id="@+id/radDCCT" android:checked="false" android:textSize="20dp"/>
+    </RadioGroup>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/txtDrEmail"
+            android:layout_below="@+id/radGroup2" android:layout_alignParentEnd="true"
+            android:layout_marginTop="47dp" android:layout_alignStart="@+id/radGroup2"
+            android:hint="Please enter Doctor&apos;s email here"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDrSubject" android:layout_below="@+id/txtDrEmail" android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/txtDrEmail" android:hint="Email Subject Here"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/txtDrMessage" android:layout_below="@+id/txtDrSubject"
+            android:layout_alignStart="@+id/txtDrSubject" android:layout_alignEnd="@+id/txtDrSubject"
+            android:hint="Message to Doctor" android:minHeight="150dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Doctor"
+            android:id="@+id/btnSendDrEmail" android:layout_below="@+id/txtDrMessage"
+            android:layout_centerHorizontal="true" android:layout_marginTop="56dp" android:onClick="onClickEmailDr"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Preferences"
+            android:id="@+id/btnSavePrefs"
+            android:layout_below="@+id/btnSendDrEmail" android:layout_centerHorizontal="true"
+            android:onClick="savePrefs"/>
+</RelativeLayout>

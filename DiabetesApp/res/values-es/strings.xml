@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DiabetesApp</string>
+    <string name="whatiseag">Cual es tu eAG?</string>
+    <string name="whatisa1c">Cual es tu A1C?</string>
+    <string name="preferredCalculation">Cual es tu método de cálculo preferref?</string>
+    <string name="calculate">Calcular</string>
+    <string name="results">Resultado</string>
+    <string name="logmydata">Registrar mis datos</string>
+    <string name="radPreMeal">Antes de la comida</string>
+    <string name="radPostMeal">Después de comer</string>
+    <string name="radNoMeal">Ninguno</string>
+    <string name="additionalNotes">Notas adicionales</string>
+    <string name="saveData">Guardar Datos</string>
+    <string name="viewChart">Ver Gráfico</string>
+    <string name="backToMain">Volver a la página principal</string>
+    <string name="whatsTheDate">¿cuál es la fecha?</string>
+    <string name="timeOfDay">Hora del día</string>
+</resources>
